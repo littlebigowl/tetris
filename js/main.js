@@ -318,7 +318,7 @@ document.addEventListener("keydown", function (e) {
 });
 
 // TOUCH ARROW CONTROLS
-touchArrowLeft.addEventListener("click", function () {
+touchArrowLeft.addEventListener("touchstart", function () {
     if (canMove.down && playing) {
         // Checking side move options
         checkMove();
@@ -328,7 +328,7 @@ touchArrowLeft.addEventListener("click", function () {
         }
     }
 });
-touchArrowRight.addEventListener("click", function () {
+touchArrowRight.addEventListener("touchstart", function () {
     if (canMove.down && playing) {
         // Checking side move options
         checkMove();
@@ -338,7 +338,7 @@ touchArrowRight.addEventListener("click", function () {
         }
     }
 });
-touchArrowUp.addEventListener("click", function () {
+touchArrowUp.addEventListener("touchstart", function () {
     if (canMove.down && playing) {
         // Checking side move options
         checkMove();
@@ -346,7 +346,7 @@ touchArrowUp.addEventListener("click", function () {
         rotatePiece();
     }
 });
-touchArrowDown.addEventListener("click", function () {
+touchArrowDown.addEventListener("touchstart", function () {
     if (canMove.down && playing) {
         // Checking side move options
         checkMove();
