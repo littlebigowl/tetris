@@ -158,7 +158,6 @@ h1 {
   left: 50%;
   -webkit-transform: translate(-50%);
   transform: translate(-50%);
-  display: none;
   border: 1px solid #2b5cff; }
 
 .touchControlItem {
@@ -198,6 +197,14 @@ i {
 .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg); }
+
+.noDisplay {
+  display: none; }
+
+.flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 @media (max-width: 400px) {
   .modalItemContainer {
