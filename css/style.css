@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-weight: normal; }
+
+body {
+  color: #eee;
+  background: url("../images/bg1.jpeg");
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100vh; }
+
+.bold {
+  font-weight: 600; }
+
+h1 {
+  height: 50px;
+  font-size: 2rem;
+  text-align: center;
+  padding: 5px 0;
+  margin-bottom: 5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+#playground {
+  width: 300px;
+  height: 600px;
+  margin: 0 auto;
+  background: black;
+  border: 2px solid #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.playgroundCell {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  border: 1px solid black; }
+
+.red {
+  background: red; }
+
+.silver {
+  background: silver; }
+
+.yellow {
+  background: yellow; }
+
+.magenta {
+  background: magenta; }
+
+.blue {
+  background: blue; }
+
+.green {
+  background: lime; }
+
+.cyan {
+  background: cyan; }
+
+#controls {
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
+  z-index: 10; }
+
+#controlsButtons {
+  border-bottom: 1px dashed #555;
+  margin-bottom: 15px; }
+
+#controlsButtons div:last-child {
+  margin-bottom: 20px; }
+
+.btn {
+  padding: 5px 8px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  border-radius: 5px;
+  width: 160px;
+  background: rgba(0, 0, 0, 0.8);
+  margin-bottom: 10px;
+  border: 2px solid #aaa;
+  -webkit-transition: border-color 0.5s ease;
+  transition: border-color 0.5s ease; }
+
+.btn:hover, .btn:focus {
+  cursor: pointer;
+  border-color: #0051ff; }
+
+#controlsInfo {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 8px 2px; }
+
+#controlsInfo p {
+  font-size: 14px;
+  text-align: center; }
+
+#modal {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.modalItemContainer {
+  max-width: 300px;
+  max-height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.modalItem {
+  font-size: 50px;
+  line-height: 100px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  background: #1787ff;
+  border: 1px solid black;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease; }
+
+.modalItem:hover {
+  cursor: pointer;
+  background: #015fbd; }
+
+#modalRows, #modalLevel, #modal {
+  display: none; }
+
+#touchControlsButtons {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 3px;
+  width: 300px;
+  height: 60px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
+  display: none;
+  border: 1px solid #2b5cff; }
+
+.touchControlItem {
+  border: 1px solid #2b5cff;
+  font-size: 40px;
+  text-align: center;
+  width: 25%;
+  height: 100%;
+  background: rgba(43, 92, 255, 0.8); }
+
+.touchControlItem:hover {
+  cursor: pointer; }
+
+i {
+  border: solid #eee;
+  border-width: 0 8px 8px 0;
+  display: inline-block;
+  padding: 10px; }
+
+.touchControlItem:active i {
+  border: solid red;
+  border-width: 0 8px 8px 0;
+  padding: 10px; }
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg); }
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg); }
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg); }
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg); }
+
+@media (max-width: 400px) {
+  .modalItemContainer {
+    max-width: 240px;
+    max-height: 240px; }
+  .modalItem {
+    width: 80px;
+    height: 80px;
+    line-height: 80px; } }
+
+@media (max-width: 250px) {
+  .modalItemContainer {
+    max-width: 180px;
+    max-height: 180px; }
+  .modalItem {
+    width: 60px;
+    height: 60px;
+    line-height: 60px; } }

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tetris</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+</head>
+
+<body>
+    <!-- MODALS -->
+    <div id="modal">
+        <div class="modalItemContainer" id="modalLevel">
+            <div class="modalItem modalItemL" id="modalLevel_1">1</div>
+            <div class="modalItem modalItemL" id="modalLevel_2">2</div>
+            <div class="modalItem modalItemL" id="modalLevel_3">3</div>
+            <div class="modalItem modalItemL" id="modalLevel_4">4</div>
+            <div class="modalItem modalItemL" id="modalLevel_5">5</div>
+            <div class="modalItem modalItemL" id="modalLevel_6">6</div>
+            <div class="modalItem modalItemL" id="modalLevel_7">7</div>
+            <div class="modalItem modalItemL" id="modalLevel_8">8</div>
+            <div class="modalItem modalItemL" id="modalLevel_9">9</div>
+        </div>
+        <div class="modalItemContainer" id="modalRows">
+            <div class="modalItem modalItemR" id="modalRow_0">0</div>
+            <div class="modalItem modalItemR" id="modalRow_1">1</div>
+            <div class="modalItem modalItemR" id="modalRow_2">2</div>
+            <div class="modalItem modalItemR" id="modalRow_3">3</div>
+            <div class="modalItem modalItemR" id="modalRow_4">4</div>
+            <div class="modalItem modalItemR" id="modalRow_5">5</div>
+            <div class="modalItem modalItemR" id="modalRow_6">6</div>
+            <div class="modalItem modalItemR" id="modalRow_7">7</div>
+            <div class="modalItem modalItemR" id="modalRow_8">8</div>
+        </div>
+    </div>
+    <!-- CONTROLS -->
+    <div id="controls">
+        <div id="controlsButtons">
+            <div id="startButton" class="btn">NEW GAME</div>
+            <div id="levelButton" class="btn">Level: <span id="levelNumberView">5</span></div>
+            <div id="rowsButton" class="btn">Rows: <span id="rowsNumberView">8</span></div>
+        </div>
+        <div id="controlsInfo">
+            <p>pause (continue): ESC / p</p>
+            <p>move: left, right arrow</p>
+            <p>rotate: up arrow</p>
+        </div>
+    </div>
+    <!-- PLAYGROUND -->
+    <div id="mainContent">
+        <h1>
+            <span id="mainHeading">Tetris</span>
+            <span id="filledRowsView"></span>
+        </h1>
+        <div id="playground"></div>
+        <div id="touchControlsButtons">
+            <div class="touchControlItem" id="touchArrowLeft"><i class="left"></i></div>
+            <div class="touchControlItem" id="touchArrowUp"><i class="up"></i></div>
+            <div class="touchControlItem" id="touchArrowDown"><i class="down"></i></div>
+            <div class="touchControlItem" id="touchArrowRight"><i class="right"></i></div>
+        </div>
+    </div>
+
+
+    <script src="js/main-min.js"></script>
+</body>
+
+</html>
